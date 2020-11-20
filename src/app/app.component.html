@@ -1,0 +1,20 @@
+<ion-app>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        <!-- Menu -->
+        <ion-button [routerLink]="['']"><ion-icon name="home-outline"></ion-icon></ion-button>
+        <ion-button [routerLink]="['/about']"><ion-icon name="heart"></ion-icon></ion-button>
+        <ion-button [routerLink]="['/links']"><ion-icon name="code-slash-outline"></ion-icon></ion-button>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large"></ion-title>
+      </ion-toolbar>
+    </ion-header>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
+</ion-app>
